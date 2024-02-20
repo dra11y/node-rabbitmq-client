@@ -5,10 +5,10 @@
   "engines": {
     "node": ">=16"
   },
-  "homepage": "https://github.com/cody-greene/node-rabbitmq-client",
+  "homepage": "https://github.com/dra11y/rabbitmq-client",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cody-greene/node-rabbitmq-client.git"
+    "url": "git+https://github.com/dra11y/rabbitmq-client.git"
   },
   "keywords": [
     "amqp",

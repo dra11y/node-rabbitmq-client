@@ -4,7 +4,7 @@
   "includeVersion": false,
   "githubPages": false,
   "sidebarLinks": {
-    "View source on GitHub": "https://github.com/cody-greene/node-rabbitmq-client"
+    "View source on GitHub": "https://github.com/dra11y/rabbitmq-client"
   },
   "out": "./docs",
   "plugin": ["./src/typedoc-plugin-versions.ts"],
