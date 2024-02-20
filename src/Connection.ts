@@ -324,7 +324,7 @@ export class Connection extends EventEmitter {
     const host = this._opt.hosts[this._state.hostIndex]
     this._state.hostIndex = (this._state.hostIndex + 1) % this._opt.hosts.length
 
-    console.log('I think the port is', host.port)
+    console.log('I think the port is', typeof host.port)
 
     // assume any previously opened socket is already fully closed
     let socket: Socket
@@ -336,6 +336,7 @@ export class Connection extends EventEmitter {
         ...this._opt.tls
       })
     } else {
+        console.log('connecting to socket not TLS')
       socket = net.connect({
         port: host.port,
         host: host.hostname,

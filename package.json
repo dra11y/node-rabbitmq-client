@@ -1,6 +1,8 @@
 {
   "name": "rabbitmq-client",
   "version": "4.5.0",
+  "type": "module",
+  "main": "src/index.ts",
   "description": "Robust, typed, RabbitMQ (0-9-1) client library",
   "engines": {
     "node": ">=16"
@@ -17,10 +19,6 @@
     "0-9-1"
   ],
   "license": "MIT",
-  "main": "./lib/index.js",
-  "files": [
-    "lib/"
-  ],
   "scripts": {
     "prepublishOnly": "rm -rf lib && tsc -p tsconfig.build.json",
     "test": "node -r ts-node/register --test test/*.ts"
