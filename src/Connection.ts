@@ -324,6 +324,8 @@ export class Connection extends EventEmitter {
     const host = this._opt.hosts[this._state.hostIndex]
     this._state.hostIndex = (this._state.hostIndex + 1) % this._opt.hosts.length
 
+    console.log('I think the port is', host.port)
+
     // assume any previously opened socket is already fully closed
     let socket: Socket
     if (this._opt.tls) {
